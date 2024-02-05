@@ -1,0 +1,104 @@
+<!doctype html>
+  <html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon"href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Контролька народная, сборка, схема, плата, файлы.">
+    <meta name="keywords" content="Контролька народная автоэлектрика на ардуино">
+    <meta name="robots" content="index,follow">
+    <title>Контролька</title>
+    <link href="bootstrap.css" rel="stylesheet">
+    <script src="bootstrap.js" crossorigin="anonymous"></script>
+
+  </head  >
+  <body  style = "background-color : #A6C197">
+    <nav class="navbar navbar-expand-lg  " data-bs-theme="dark" style = "background-color : #18464A">
+      <div class="container-fluid">
+        <a class="navbar-brand link-body-emphasis" href="#">Народная контролька</a>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse  justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item ">
+              <a class="nav-link " aria-current="page" href="#">Обзор функций</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active link-body-emphasis" aria-current="page" href="#">Пошаговая сборка</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active link-body-emphasis" aria-current="page" href="#">Схема и плата</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active link-body-emphasis" aria-current="page" href="#">Питание</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active link-body-emphasis" aria-current="page" href="#">Прошивка</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active link-body-emphasis" aria-current="page" href="#">Компоненты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active link-body-emphasis" aria-current="page" href="#">Файлы для скачивания</a>
+            </li>
+          </div>
+        </div>
+      </nav>
+
+    </br>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2 p-0 d-none d-md-block">
+
+        </div >
+
+        <div class="col p-0 ">
+
+          <div class="container-fluid p-0">
+
+
+
+<div class="card p-1 mt-5">
+                <h5 class="card-header text-center text-white" style = "background-color : #18464A">CRANK SENSOR!</h5>
+                <div class="card-body p-1">
+                  <h5 class="card-title">Функция и возможности.</h5>
+                  <img  src="image/dpkv_minus.jpg" class="img-fluid w-100">
+                  <p class="card-text">Функция эмулятор датчика положения коленвала (CRANK SENSOR) позволяет имитировать сигнал датчика коленвала многих автомобилей, так как в функции можно менять количество зубьев и количество пропусков на шкиве коленвала. Например многие ЭБУ Bosch и его клоны (Январь, Микас и пр.) используют схему 60 импульсов из которых 2 пропуска (данная схема настроена по умолчанию 58 импульсов и 2 пропуска). В автомобилях часто встречаются 2 типа сигнала дпкв это прямоугольные импульсы (датчики холла) и синусоида (индукционные датчики), прямоугольные импульсы выдает генератор в контрольке, а в синусоиду придется дополнительно преобразовать сигнал (хотя некоторые ЭБУ понимают оба типа сигнала), дя преобразования есть много схемок в интернете они очень простые и требуют 2-3 детали, протестирую потом и размещу что работает хорошо.<br>
+                    На экране сейчас мы видим слева вверху значение импульсов(PIP), а справа вверху значение пропусков(POP), внизу слева у нас режим изменения (TUNE) значений если он один снизу то значения можно менять, если еще есть надпись PULSE то идет цикл который имитирует 20 оборотов коленвала (в нем контролька блокируется), далее пройдя 20 оборотов мы можем менять значения кнопкой 2 и 3 или выйти из функции кнопкой 1. Если снизу справа высвечивается минус (-) то импульсы идут минусовые.
+                  </p>
+          <p><img  src="image/dpkv_plus.jpg" class="img-fluid w-100">
+                        Кнопкой 2 настраивается количество импульсов оно может достигать 98, а кнопкой 3 количество пропусков  оно тоже может достигать 98, после набора максимального значения значение обнуляется, при длительном удерживании кнопки 2 или 3 идет быстрый набор значения. <br> На дисплее внизу сейчас высвечивается плюс(+), это означает что идет плюсовой сигнал. Переключение полярности сигнала находится в главном меню где зажатием кнопок 2 и 3 мы можем менять плюс на минус.
+
+
+                  </p>
+
+                </div>
+              </div>
+
+
+
+
+
+
+            </div>
+
+          </div>
+
+
+
+          <div class="col-2 p-0 d-none d-md-block">
+            <!-- третья колонка невидимая -->
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+    </body>
+    </html>
+
+
+
+
+
+
