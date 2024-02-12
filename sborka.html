@@ -9,42 +9,36 @@
     <meta name="robots" content="index,follow">
     <title>Контролька</title>
     <link href="bootstrap.css" rel="stylesheet">
+    <script src="jQuery.js" crossorigin="anonymous"></script>
     <script src="bootstrap.js" crossorigin="anonymous"></script>
 
   </head  >
   <body  style = "background-color : #A6C197">
-    <nav class="navbar navbar-expand-lg  " data-bs-theme="dark" style = "background-color : #18464A">
-      <div class="container-fluid">
-        <a class="navbar-brand link-body-emphasis" href="#">Народная контролька</a>
-        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse  justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item ">
-              <a class="nav-link active link-body-emphasis" aria-current="page" href="index.html">Обзор функций</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="sborka.html">Пошаговая сборка</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active link-body-emphasis" aria-current="page" href="shema.html">Схема и плата</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active link-body-emphasis" aria-current="page" href="#">Питание</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active link-body-emphasis" aria-current="page" href="#">Прошивка</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active link-body-emphasis" aria-current="page" href="#">Компоненты</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active link-body-emphasis" aria-current="page" href="#">Файлы для скачивания</a>
-            </li>
-          </div>
-        </div>
-      </nav>
+ <nav class="navbar navbar-expand-lg navbar-dark " style = "background-color : #18464A">
+  <a class="navbar-brand " href="#">Народная контролька</a>
+  <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <ul class="navbar-nav mb-2 mb-lg-0 ">
+      <li class="nav-item active">
+        <a class="nav-link text-light" href="index.html">Главная </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link text-light" href="obzor.html">Обзор функций </a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link " href="sborka.html">Пошаговая сборка </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link text-light" href="shema.html">Схема и плата</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link  text-light" href="zagruzka.html">Файлы для скачивания</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
 
 
@@ -57,10 +51,23 @@
 
           <div class="container-fluid p-0">
 
+
+    <div class="card p-1 mt-3">
+              <a id="dpkv"></a>
+              <h5 class="card-header text-center text-white" style = "background-color : #18464A">Сайт в разработке!</h5>
+              <div class="card-body p-1">
+                <h5 class="card-title">Что то может устарело или гдето ошибки это нормально!</h5>
+                <p>
+                  Старый сайт с актуальной информацией <a href="https://indeedphp.github.io/arduino/pages/handiwork.html#kontrolka9" >Перейти</a>
+                  <p/>
+                </div>
+              </div>
+
+
             <div class="card p-1 mt-4">
               <h5 class="card-header text-center text-white" style = "background-color : #18464A">Пошаговая сборка контрольки</h5>
               <div class="card-body p-1">
-                <h5 class="card-title">Начинем с платы ардуино. Первый шаг.</h5>
+                <h5 class="card-title">Начнем с платы ардуино. Первый шаг.</h5>
                 <img  src="image/maket_arduino.jpg" class="img-fluid w-100">
                 <p class="card-text">Итак у нас плата ардуино нано, для первоначальной сборки рекомендую использовать беспаечную макетную плату, но если ее нет первый шаг делаем без нее. Подключаем ардуино нано к компьютеру, для этого необходимо установить программу ардуино иде рекомендую 1.8.16 как самую простую и проверенную, установить драйвер ардуино если необходимо, далее загружаете в ардуино пример из программы называется "блинк" (мигание встроенным в плату светодиодом), затем меняете в примере цифру 1000 на любую например 500 - снова загружаете и смотрите что поменялось.
                   Если все работает плата подключилась и получилось загрузить и изменить мигание то очень хорошо, вы молодцы, первый шаг пройден. Для информации можно посмотреть ролики на Ютуб, так и пишите "блинк ардуино" или "ардуино первое знакомство" и информации будет достаточно.
@@ -599,7 +606,7 @@ void shastotomer() {
                 <h5 class="card-title">Восьмой шаг</h5>
                 <img  src="image/shema_dodelka.jpg" class="img-fluid w-100">
                 <p class="card-text">
-                Ну все вы добрались до завершающего шага в нем уже сами собираете по схеме оставшееся, это полевой транзистор с резисторами для подключения нагрузки, отмечен красным(он так же работает для минусового генератора), фонарик который светит всегда при подключении питания(отмечен синим), и стабилитроны защиты контрольки три штуки (отмеченные желтым). Надеюсь у вас получится, переходите в раздел схема и плата если я сильно замазал детали, там все что надо найдете для сборки.
+                Ну все вы добрались до завершающего шага в нем уже сами собираете по схеме оставшееся, это полевой транзистор с резисторами для подключения нагрузки, отмечен красным(он так же работает для минусового генератора), фонарик который светит всегда при подключении питания(отмечен синим), и стабилитроны защиты контрольки три штуки (отмеченные желтым). Надеюсь у вас получится, переходите в раздел схема и плата если я сильно замазал детали, там все что надо найдете для сборки. После сборки загружаем скетч официальный, производим коррекцию напряжения ( настройка в описании функций  ) и все у вас рабочая контролька.
                 </p>
 
                 <br/>
