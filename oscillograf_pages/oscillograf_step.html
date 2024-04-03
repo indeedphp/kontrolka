@@ -1,0 +1,215 @@
+<!doctype html>
+  <html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon"href="../favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Осциллограф народный, сборка, схема, плата, файлы.">
+    <meta name="keywords" content="Народный осциллограф на разбери пи пико скоппи">
+    <meta name="robots" content="index,follow">
+    <title>Осциллограф</title>
+    <link href="../bootstrap.css" rel="stylesheet">
+    <script src="../jQuery.js" crossorigin="anonymous"></script>
+    <script src="../bootstrap.js" crossorigin="anonymous"></script>
+
+  </head  >
+  <body  style = "background-color : #A6C197">
+ <nav class="navbar navbar-expand-lg navbar-dark " style = "background-color : #58494A">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="16.000000pt" height="16.000000pt" viewBox="0 0 16.000000 16.000000"
+ preserveAspectRatio="xMidYMid meet">
+<metadata>
+Created by potrace 1.16, written by Peter Selinger 2001-2019
+</metadata>
+<g transform="translate(0.000000,16.000000) scale(0.009938,-0.009938)"
+fill="#FFFFFF" stroke="none">
+<path d="M635 1523 c-149 -35 -307 -129 -399 -237 -106 -124 -178 -301 -177
+-435 0 -41 3 -76 6 -79 2 -3 156 8 342 24 l338 29 -1 65 c-1 36 -13 178 -27
+315 -15 138 -28 267 -29 288 -2 38 -7 41 -53 30z m-126 -324 c18 -11 31 -23
+27 -26 -3 -3 3 -12 13 -19 41 -29 33 -125 -14 -176 -31 -33 -85 -50 -125 -38
+-68 20 -118 98 -106 165 8 39 49 93 80 105 37 15 90 11 125 -11z"/>
+<path d="M993 1261 c-64 -40 -86 -105 -59 -175 24 -61 45 -77 113 -83 47 -3
+64 0 90 16 82 52 88 177 11 234 -39 29 -115 33 -155 8z"/>
+<path d="M915 759 c-297 -26 -592 -51 -655 -54 -63 -4 -133 -10 -155 -14 -35
+-6 -40 -10 -37 -31 7 -44 51 -162 83 -219 43 -77 146 -201 168 -201 5 0 11 -6
+14 -13 8 -21 177 -104 257 -126 256 -71 522 -1 711 188 123 123 198 280 214
+449 l8 72 -34 -1 c-19 -1 -277 -23 -574 -50z"/>
+</g>
+</svg> &nbsp;
+
+  <a class="navbar-brand text-light" href="oscillograf.html">Народный осциллограф</a>
+  <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <ul class="navbar-nav mb-2 mb-lg-0 ">
+       <li class="nav-item active">
+        <a class="nav-link text-light" href="../index.html">Главная </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link " href="oscillograf.html">Осциллограф </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link text-light" href="oscillograf_obzor.html">Обзор функций </a>
+      </li>
+        <li class="nav-item ">
+        <a class="nav-link " href="oscillograf_step.html">Пошаговая сборка </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link text-light" href="oscillograf_shema.html">Схема и плата</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link  text-light" href="oscillograf_zagruzka.html">Файлы для скачивания</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link  text-light" href="../kontakt.html">Контакты</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+     <div class="container-fluid">
+      <div class="row">
+        <div class="col-2 p-0 d-none d-md-block">
+
+        </div >
+
+        <div class="col p-0 ">
+
+          <div class="container-fluid p-0">
+
+
+
+
+            <div class="card p-1 mt-4">
+            <h5 class="card-header text-center text-white" style = "background-color : #58494A">Шаг первый</h5>
+            <div class="card-body p-1">
+              <h5 class="card-title">Подключаем к пк и заливаем прошивку</h5>
+              <img  src="../image/oscillograf/step1.jpg" class="img-fluid w-100">
+              <p class="card-text">Для загрузки прошивки в Raspberry Pi Pico W не нужны специальные программы и программаторы, просто зажимаем кнопку на плате и подключаем к компьютеру. На компьютере появляется новый диск как будто мы подключили флешку и войдя в нее мы видим такие файлы, не трогаем их, а просто перетаскиваем прошивку(прошивка лежит в файлах для скачивания на этом сайте) внутрь этого диска к остальным файлам. Как только прошивка окажется внутри полностью диск отключится и это означает что прошивка завершена. Выдергиваем с платы юсб разьем и втыкаем вновь но кнопку уже не держим, на плате должен мигать светодиод это значит идет поиск вай фай соединения. Далее скачиваем с плеймаркета приложение Scoppy Oscilloscope(бесплатное на один канал) и подключаемся к вай фай точке с названием Scoppy, вводить код не надо.
+              </p>
+              <br>
+            </div>
+          </div>
+
+
+
+
+    <div class="card p-1 mt-4">
+            <h5 class="card-header text-center text-white" style = "background-color : #58494A">Шаг второй</h5>
+            <div class="card-body p-1">
+              <h5 class="card-title">Минимальная схема для работы осциллографа</h5>
+              <img  src="../image/oscillograf/step2.jpg" class="img-fluid w-100">
+              <p class="card-text">Для работы осциллографа на один канал на напряжении до 33 вольт нам нужно только три детали сама плата Raspberry Pi Pico W и два резистора которые нужны чтоб уменьшить входное напряжение в 10 раз.
+                Питать плату можно от повербанка или компьютера через юсб разьем. Предупреждение в таком виде схема не защищена от скачков напряжения от моторов, обмоток реле, соленоидов и пр. не рекомендую данную схему использовать на автомобиле, во втором шаге добавим защиту.
+              </p>
+              <br>
+            </div>
+          </div>
+
+
+
+    <div class="card p-1 mt-4">
+            <h5 class="card-header text-center text-white" style = "background-color : #58494A">Шаг третий</h5>
+            <div class="card-body p-1">
+              <h5 class="card-title">Минимальная схема для работы осциллографа с защитой</h5>
+              <img  src="../image/oscillograf/step3.jpg" class="img-fluid w-100">
+              <p class="card-text">Для работы защиты нам необходим резистор и стабилитрон, при превышении напряжения больше 30 вольт стабилитрон откроется и скинет на массу избыток. Питание у нас по прежнему от юсб разьема, в следующем шаге сделаем от акб автомобиля.
+              </p>
+              <br>
+            </div>
+          </div>
+
+
+ <div class="card p-1 mt-4">
+            <h5 class="card-header text-center text-white" style = "background-color : #58494A">Шаг четвертый</h5>
+            <div class="card-body p-1">
+              <h5 class="card-title">Добавляем возможность работы от акб автомобиля</h5>
+              <img  src="../image/oscillograf/step4.jpg" class="img-fluid w-100">
+              <p class="card-text">Чтоб была возможность работы от акб автомобиля необходимо понизить напряжение до 5 вольт, этим будет заниматся линейный стабилизатор на микросхеме L7805 и двух конденсаторах, так же добавим диод для защиты от переполюсовки. Ток потребления осцилографом около 200 милиампер, стабилизатор расчитан работать от 30 вольт с нагрузкой до 1 ампера, так что стабилизатор справится даже без радиатора. Минус теперь подключается общий для питания и для осциллографа не нужно его подключать отдельно, просто подключаем щуп куда либо и снимаем сигнал.
+              </p>
+              <br>
+            </div>
+          </div>
+
+
+
+ <div class="card p-1 mt-4">
+            <h5 class="card-header text-center text-white" style = "background-color : #58494A">Шаг пятый</h5>
+            <div class="card-body p-1">
+              <h5 class="card-title">Добавляем второй канал</h5>
+              <img  src="../image/oscillograf/step5.jpg" class="img-fluid w-100">
+              <p class="card-text">Осциллограф у нас двухканальный так что давайте добавим второй канал, второй канал полностью похож на первый те же детали. Для активации второго канала необходимо купить полную версию программы Scoppy Oscilloscope в плеймаркете, но для России такое действие невозможно, зайдите на мой телеграмм канал задайте вопрос, эту проблему решали разными способами.
+              </p>
+              <br>
+            </div>
+          </div>
+
+
+ <div class="card p-1 mt-4">
+            <h5 class="card-header text-center text-white" style = "background-color : #58494A">Шаг шестой</h5>
+            <div class="card-body p-1">
+              <h5 class="card-title">Добавляем генератор прямоугольных импульсов</h5>
+              <img  src="../image/oscillograf/step6.jpg" class="img-fluid w-100">
+              <p class="card-text">В осциллографе есть генератор на котором можно выставить любую частоту от 10 герц до 10 килогерц, данный генератор можно применять для проверки и калибровки спидометров, тахометров, проверки вентиляторов охлаждения с ШИМ блоками на 50% мощности и пр. Генератор работает так: сначала подается слабое питание от акб автомобиля затем оно просаживается до нуля с помощью транзистора, для отключения генератора от щупа установлен ползунковый переключатель. Для защиты от короткого замыкания стоит мощьный резистор на 100 Ом на входе. У генератора есть странная особенность останавливатся в работе как с подачей плюса так и минуса надеюсь эту особенность исправят в будующих версиях, так же хотелось чтоб было регулирование скважности ШИМ, напишите разработчикам может мы их уговорим и они поправят.
+              </p>
+              <br>
+            </div>
+          </div>
+
+
+ <div class="card p-1 mt-4">
+            <h5 class="card-header text-center text-white" style = "background-color : #58494A">Шаг седьмой</h5>
+            <div class="card-body p-1">
+              <h5 class="card-title">Добавляем подтяжку 5 вольт</h5>
+              <img  src="../image/oscillograf/step7.jpg" class="img-fluid w-100">
+              <p class="card-text">В автомобиле часто сигналы управления бывают минусовые, то есть или нет сигнала или масса, для просмотра таких сигналов необходима подтянуть слаботочное питание к щупу тогда минус который появляется в виде сигнала будет это напряжение просаживать и мы увидим сигнал. Для подтяжки используем 5 вольт которые подаются на плату, чтоб уменьшить ток поставим резистор, а диод поставим для защиты питания от импульсов. Все это будет подключать ползунковый выключатель размещенный на плате.</p>
+              <br>
+            </div>
+          </div>
+
+ <div class="card p-1 mt-4">
+            <h5 class="card-header text-center text-white" style = "background-color : #58494A">Шаг восьмой, финальный</h5>
+            <div class="card-body p-1">
+              <h5 class="card-title">Добавляем индикатор питания</h5>
+              <img  src="../image/oscillograf/sxema.jpg" class="img-fluid w-100">
+              <p class="card-text">На плате есть светодиод который моргает при поиске подключения вай фай и светит когда с подключением все в порядке, желательно сделать окошко для того чтоб видеть данный светодиод. Так же если есть желание можно сделать светодиод который будет показывать что питание подано и полярность его правильная. Для индикатора возьмем любой светодиод и резистор, подключаем по схеме и индикатор работает, данное усовершествование хоть и простое но может спасти немало нервов в работе.</p>
+              <br>
+            </div>
+          </div>
+
+
+  <div class="card p-1 mt-4">
+          <div class="card-body p-1">
+           <p class="card-text">
+             Сайт принадлежит автору ютуб канала "Автоэлектрика онлайн", вопросы, предложения, донаты приветствуются!
+             <br>
+             <a href="kontakt.html">Все контакты тут!</a>
+           </p>
+         </div>
+       </div>
+
+
+
+</div>
+
+</div>
+
+
+
+<div class="col-2 p-0 d-none d-md-block">
+  <!-- третья колонка невидимая -->
+</div>
+</div>
+</div>
+<br><br><br>
+</body>
+</html>
+
+
+
+
+
+
