@@ -50,7 +50,7 @@ fill="#FFFFFF" stroke="none">
         <a class="nav-link " href="oscillograf.html">Осциллограф </a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link " href="oscillograf_obzor.html">Обзор функций </a>
+        <a class="nav-link " href="oscillograf_obzor.html">Обзор </a>
       </li>
         <li class="nav-item active">
         <a class="nav-link text-light" href="oscillograf_step.html">Пошаговая сборка </a>
@@ -59,7 +59,7 @@ fill="#FFFFFF" stroke="none">
         <a class="nav-link text-light" href="oscillograf_shema.html">Схема и плата</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link  text-light" href="oscillograf_zagruzka.html">Файлы для скачивания</a>
+        <a class="nav-link  text-light" href="oscillograf_zagruzka.html">Загрузки </a>
       </li>
       <li class="nav-item active">
         <a class="nav-link  text-light" href="../kontakt.html">Контакты</a>
@@ -81,9 +81,76 @@ fill="#FFFFFF" stroke="none">
           <div class="container-fluid p-0">
 
 
+         <div class="card p-1 mt-4">
+            <h5 class="card-header text-center text-white" style = "background-color : #58494A">Приложение</h5>
+            <div class="card-body p-1">
+              <h5 class="card-title">Заходим в плеймаркет и устанавливаем бесплатное приложение.</h5>
+              <img  src="../image/oscillograf/scoppy.jpg" class="img-fluid w-100 border">
+              <p class="card-text">Scoppy Oscilloscope хорошее <a target="_blank" href="https://play.google.com/store/apps/details?id=xyz.fhdm.scoppy&pli=1" >приложение</a> двухканального осциилографа работающее с платой Raspberry Pi Pico и Raspberry Pi Pico W (вай фай версия), разработка не моя но я немного доработал схему для удобной работы в автомобиле. Само приложение бесплатно при работе на один канал, то есть если вы просто установили то все функции как у обычной версии но отключен один канал, например работает генератор выдающий прямоугольные импульсы и пр. При покупке приложения за 1.5 доллара у вас навсегда остается этот осциллограф с возможностью обновления, привязанный к аккаунту(как я понял), в России данная покупка невозможна поэтому заходим в мой телеграмм канал там есть различные варианты решения этой проблемы.
+              </p>
+              <br>
+            </div>
+          </div>
+
+ <div class="card p-1 mt-4">
+            <h5 class="card-header text-center text-white" style = "background-color : #58494A">Подключение</h5>
+            <div class="card-body p-1">
+              <h5 class="card-title">Подключаем приложение к осциллографу</h5>
+              <img  src="../image/oscillograf/scoppy_wifi.jpg" class="img-fluid w-100 border">
+              <p class="card-text">
+                После установки приложения включаем вайфай на телефоне и ищем точку scoppy (код для подключения не требуется), естественно плата Raspberry Pi Pico W должна быть подключена к питанию и в нее должна быть закинута прошивка (как это сделать смотрите в пошаговой сборке на этом сайте).
+              </p>
+              <br>
+            </div>
+          </div>
+
+ <div class="card p-1 mt-4">
+            <h5 class="card-header text-center text-white" style = "background-color : #58494A">Интерфейс</h5>
+            <div class="card-body p-1">
+              <h5 class="card-title">Внешний вид осциллографа и управление</h5>
+              <img  src="../image/oscillograf/interfase.jpg" class="img-fluid w-100 border">
+              <p class="card-text">
+               Опишу только те элементы которыми пользуюсь сам:
+               <ol>
+ <li>Выбор способа подключения и индикатор что подключение успешное(или его нет).</li>
+ <li>Настройки первого (бесплатного канала), можно подкорректировать напряжение, отключить и пр.</li>
+ <li>Настройки второго канала, если программа бесплатная (как сейчас) то канал отключен.</li>
+  <li>Кнопка старт стоп считывания сигнала.</li>
+ <li>Кнопка перехода на платную версию со вторым каналом</li>
+ <li>Включение генератора сигнала , есть предустановленые значения и можно ввести свои</li>
+</ol>
+              </p>
+              <br>
+            </div>
+          </div>
 
 
 
+ <div class="card p-1 mt-4">
+            <h5 class="card-header text-center text-white" style = "background-color : #58494A">Сигналы</h5>
+            <div class="card-body p-1">
+              <h5 class="card-title">Снимаем сигнал с двух каналов</h5>
+              <img  src="../image/oscillograf/scoppy_screenshot.jpg" class="img-fluid w-100 border">
+              <p class="card-text">
+На платной версии смотрим сигнал с двух каналов одновременно, в данный момент снятие сигнала остановлено можно расширять сигнал рассматривая как удобнее. Сигнал снят с авто Приора 16 клапанный мотор, 1 канал ДПКВ индуктивный датчик , 2 канал ДПРВ датчик холла с питанием 5 вольт, видна рассинхронизация на пол зуба если сравнить с эталоном на сайте "Ротки".
+              </p>
+              <br>
+            </div>
+          </div>
+
+
+
+ <div class="card p-1 mt-4">
+            <h5 class="card-header text-center text-white" style = "background-color : #58494A">Осциллограф</h5>
+            <div class="card-body p-1">
+              <h5 class="card-title">Плата осциллографа с установленной Raspberry Pi Pico W</h5>
+              <img  src="../image/oscillograf/plata_real.jpg" class="img-fluid w-100 border">
+              <p class="card-text">
+На фото собранный осциллограф с питанием от автомобильного акб, на два канала, с генератором выведенным на первый канал и подтяжкой 5 вольт для второго канала и индикатором питания. Можно собирать не все, а постепенно например только первый канал, затем питание от акб и пр, на сайте есть пошаговая сборка. Генератор пригодится для тестов осциллографа перед работой , так же можно проверять и калибровать спидометры эмулируя датчик скорости, запускать ШИМ вентиляторы на 50% мощности и пр. Подтяжка 5 вольт предназначена для просмотра минусовых сигналов встречающихся часто на авто.
+              </p>
+              <br>
+            </div>
+          </div>
 
 
 
